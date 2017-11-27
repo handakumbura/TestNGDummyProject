@@ -1,0 +1,18 @@
+<suite name="TestNG crash course">
+<listeners>
+	<listener class-name="TestNG.TestNG.Listener"/>
+</listeners>
+ <test name="Test One">
+ <groups>
+ 	<run>
+ 		<include name="UI"/>
+ 		<include name="backend"/>
+ 	</run>
+ </groups>
+ <classes>
+	<class name="TestNG.TestNG.TestcaseOne"/>
+	<class name="TestNG.TestNG.TestcaseTwo"/>
+	<class name="TestNG.TestNG.TestcaseThree"/>
+ </classes>
+ </test>
+</suite>
